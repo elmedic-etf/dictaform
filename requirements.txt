@@ -1,0 +1,8 @@
+PySide6>=6.6
+sounddevice>=0.4.6
+# numpy <2 because torch 2.2.x (last x86_64 macOS wheel) was built against 1.x.
+numpy>=1.24,<2
+webrtcvad-wheels>=2.0.14
+openai-whisper>=20231117
+httpx>=0.27
+python-dotenv>=1.0

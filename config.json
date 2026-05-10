@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "Patient Information",
+      "fields": [
+        {"key": "patient_name", "label": "Name", "type": "string"},
+        {"key": "year_of_birth", "label": "Year of Birth", "type": "integer"}
+      ]
+    },
+    {
+      "name": "Clinical",
+      "fields": [
+        {"key": "diagnosis", "label": "Diagnosis", "type": "text"},
+        {"key": "treatment", "label": "Proposed Treatment", "type": "text"}
+      ]
+    }
+  ]
+}
