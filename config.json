@@ -3,15 +3,52 @@
     {
       "name": "Patient Information",
       "fields": [
-        {"key": "patient_name", "label": "Name", "type": "string"},
-        {"key": "year_of_birth", "label": "Year of Birth", "type": "integer"}
+        {"key": "patient_name",   "label": "Ime i prezime",     "type": "string"},
+        {"key": "age",            "label": "Godine starosti",    "type": "integer"},
+        {"key": "hospitalization_date", "label": "Datum prijema", "type": "string"}
       ]
     },
     {
-      "name": "Clinical",
+      "name": "Komorbiditeti",
       "fields": [
-        {"key": "diagnosis", "label": "Diagnosis", "type": "text"},
-        {"key": "treatment", "label": "Proposed Treatment", "type": "text"}
+        {"key": "diabetes_mellitus",       "label": "Dijabetes melitus",        "type": "string"},
+        {"key": "chronic_kidney_disease",  "label": "Hronična bubrežna bolest", "type": "string"},
+        {"key": "malignancy",              "label": "Maligniteti",              "type": "string"},
+        {"key": "immunosuppressive_therapy","label": "Imunosupresivna terapija","type": "string"},
+        {"key": "copd",                    "label": "HOBP",                     "type": "string"},
+        {"key": "heart_failure",           "label": "Srčana insuficijencija",   "type": "string"}
+      ]
+    },
+    {
+      "name": "Vitalni parametri",
+      "fields": [
+        {"key": "heart_rate",        "label": "Srčana frekvencija (udari/min)",    "type": "integer"},
+        {"key": "respiratory_rate",  "label": "Frekvencija disanja (udisaji/min)", "type": "integer"},
+        {"key": "map",               "label": "Srednji arterijski pritisak (mmHg)","type": "integer"},
+        {"key": "spo2",              "label": "Saturacija O2 (%)",                 "type": "integer"},
+        {"key": "temperature",       "label": "Telesna temperatura (°C)",          "type": "string"},
+        {"key": "gcs",               "label": "Glasgow coma score",                "type": "integer"},
+        {"key": "urine_output",      "label": "Diureza (ml/kg/h)",                 "type": "string"}
+      ]
+    },
+    {
+      "name": "Laboratorijske vrednosti",
+      "fields": [
+        {"key": "lactate",       "label": "Laktati (mmol/l)",       "type": "string"},
+        {"key": "wbc",           "label": "Leukociti (x10⁹/l)",     "type": "string"},
+        {"key": "creatinine",    "label": "Kreatinin (µmol/l)",      "type": "integer"},
+        {"key": "procalcitonin", "label": "Prokalcitonin (ng/ml)",   "type": "string"},
+        {"key": "platelets",     "label": "Trombociti (x10⁹/l)",    "type": "integer"},
+        {"key": "bilirubin",     "label": "Bilirubin (µmol/l)",      "type": "string"},
+        {"key": "crp",           "label": "CRP (mg/l)",              "type": "string"}
+      ]
+    },
+    {
+      "name": "Klinički zaključak",
+      "fields": [
+        {"key": "diagnosis",  "label": "Dijagnoza",          "type": "text"},
+        {"key": "treatment",  "label": "Predložena terapija","type": "text"},
+        {"key": "notes",      "label": "Napomene",           "type": "text"}
       ]
     }
   ]
